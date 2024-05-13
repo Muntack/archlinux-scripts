@@ -43,7 +43,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt /bin/bash <<EOF
 
 # Zona horaria
-ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+ln -sf /usr/share/zoneinfo/Region/Americas /etc/localtime
 hwclock --systohc
 
 # Idioma y localización
